@@ -1,5 +1,5 @@
 # Haxe extern for uws
-Haxe extern definitions for !(npm uws)[https://www.npmjs.com/package/uws].
+Haxe extern definitions for ![npm uws](https://www.npmjs.com/package/uws).
 
 ## Install
 `haxelib install extern-uws`
