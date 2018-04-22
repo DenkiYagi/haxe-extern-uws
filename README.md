@@ -83,7 +83,7 @@ client.onerror = function (err) {
 ## Example 2 : HTTP Server with Koa.js
 ```haxe
 var app = new Koa();
-app.use(ctx => {
+app.use(function (ctx) {
     ctx.body = "Hello World!";
 });
 

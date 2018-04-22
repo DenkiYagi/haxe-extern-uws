@@ -1,0 +1,8 @@
+-cp src
+-lib extern-uws
+-lib extern-koa
+-main Main
+-js dist/main.js
+-D js-es5
+-D analyzer-optimize
+-dce full
