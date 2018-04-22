@@ -9,6 +9,7 @@
     "contributors": ["terurou"],
     "tags": ["js", "nodejs", "uws", "web", "websocket", "http", "extern"],
     "dependencies": {
+        "externtype": "git:https://github.com/DenkiYagi/haxe-extern-type",
         "hxnodejs": "git:https://github.com/HaxeFoundation/hxnodejs"
     }
 }
