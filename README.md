@@ -36,7 +36,7 @@ server.on(ServerEventType.Connection, function (ws) {
     ws.send(Buffer.from("こんにちわ世界", "utf-8"), { binary: true });
 
     haxe.Timer.delay(function () {
-        ws.close();
+        ws.terminate();
     }, 2000);
 });
 
@@ -53,9 +53,9 @@ client.onopen = function () {
     client.send("hello");
 }
 
-client.onmessage = function () {
-    console.log("message");
-    console.log(arguments);
+client.onmessage = function (event) {
+    trace("message");
+    trace(event);
 }
 
 client.onping = function (message) {
@@ -63,8 +63,9 @@ client.onping = function (message) {
     trace(message);
 }
 
-client.onpong = function () {
+client.onpong = function (message) {
     trace("pong");
+    trace(message);
 }
 
 client.onclose = function (event) {
