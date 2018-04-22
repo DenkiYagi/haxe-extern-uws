@@ -1,0 +1,11 @@
+{
+    "name": "extern-uws",
+    "url": "https://github.com/DenkiYagi/haxe-extern-uws",
+    "description": "Extern definitions for npm uws",
+    "license": "Apache",
+    "version": "9.147.0",
+    "releasenote": "",
+    "classPath": "src",
+    "contributors": ["terurou"],
+    "tags": ["js", "nodejs", "uws", "web", "websocket", "http", "extern"]
+}
