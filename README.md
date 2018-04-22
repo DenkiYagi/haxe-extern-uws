@@ -8,11 +8,11 @@ Haxe extern definitions for ![npm uws](https://www.npmjs.com/package/uws).
 ### Server
 ```haxe
 var server = new UwsServer({ port: 3000 });
-server.on(ServerEventType.Listening, function () {
+server.on(ServerEvent.Listening, function () {
     trace("Listening started");
 });
 
-server.on(ServerEventType.Connection, function (ws) {
+server.on(ServerEvent.Connection, function (ws) {
     ws.onping = function () {
         trace("ping");
     }
@@ -40,7 +40,7 @@ server.on(ServerEventType.Connection, function (ws) {
     }, 2000);
 });
 
-server.on(ServerEventType.Error, function (err) {
+server.on(ServerEvent.Error, function (err) {
     trace(err);
 });
 ```
