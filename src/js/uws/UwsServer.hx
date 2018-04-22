@@ -6,6 +6,7 @@ import js.node.events.EventEmitter;
 import js.node.http.IncomingMessage;
 import js.node.http.Server in HttpServer;
 import js.node.https.Server in HttpsServer;
+import haxe.Constraints.Function;
 import externtype.Mixed2;
 import externtype.ReadOnlyArray;
 
@@ -35,4 +36,10 @@ typedef VerificationInfo = {
     var origin(default, null): String;
     var secure(default, null): Bool;
     var req(default, null): IncomingMessage;
+}
+
+@:enum abstract ServerEvent<T: Function>(Event<T>) to Event<T> {
+    var Listening: ServerEvent<Void -> Void> = "listening";
+    var Connection: ServerEvent<WebSocket -> Void> = "connection";
+    var Error: ServerEvent<Error -> Void> = "error";
 }
