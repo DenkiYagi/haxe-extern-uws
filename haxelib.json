@@ -1,5 +1,5 @@
 {
-    "name": "extern-uws",
+    "name": "uws",
     "url": "https://github.com/DenkiYagi/haxe-extern-uws",
     "description": "Extern definitions for npm uws",
     "license": "Apache",
