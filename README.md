@@ -2,7 +2,7 @@
 Haxe extern definitions for [npm uws](https://www.npmjs.com/package/uws).
 
 ## Install
-`haxelib git uws https://github.com/DenkiYagi/haxe-extern-uws`
+`haxelib install uws`
 
 ## Example 1 : Websocket
 ### Server
